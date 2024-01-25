@@ -1,5 +1,7 @@
 const path = require('path'); //path module from node.js. Allows us to use absolute path name
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
 module.exports = {
     mode: 'development',
     entry: './src/index.js',  //source
@@ -22,7 +24,7 @@ module.exports = {
         rules: [
             {
                 test: /\.css$/,  //means any file that ends with .css
-                use: ['style-loader', 'css-loader'],
+                use: [MiniCssExtractPlugin.loader, 'css-loader'],
             },
             {
                 test: /\.js$/,  //means any file that ends with js
@@ -42,5 +44,6 @@ module.exports = {
             filename: 'index.html',
             template: './src/index.html',
         }),
+        new MiniCssExtractPlugin()
     ],
 };
