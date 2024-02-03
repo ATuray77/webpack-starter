@@ -6,10 +6,14 @@
 //const promises = require('fs');
 
 import './css/style.css';
-import Modal from './components/Modal';
+import Modal from './components/Modal'; //bringing in Modal
+import IdeaForm from './components/IdeaForm';//bringing in IdeaForm 
 import '@fortawesome/fontawesome-free/css/all.css'
 
 
 const modal = new Modal(); //instantiating the modal class
+
+const ideaForm = new IdeaForm(); //instantiating IdeaForm class
+ideaForm.render();//calling render() on the ideaForm
 
 
