@@ -12,5 +12,3 @@ import '@fortawesome/fontawesome-free/css/all.css'
 
 
 
-modalBtn.addEventListener('click', open)//event listener on the modal btn, with the open function
-window.addEventListener('click', outsideClick);//clicking outside the modal should close it
