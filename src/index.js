@@ -5,7 +5,6 @@
 //const { promises: fsPromises } = require('fs');
 //const promises = require('fs');
 
-import message from "./message";
 import './css/style.css';
 
-console.log(message)
+
