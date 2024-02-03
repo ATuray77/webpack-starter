@@ -6,12 +6,12 @@ module.exports = {
     mode: 'development',
     entry: './src/index.js',  //source
     output: {
-        path: path.resolve(__dirname, 'dist'), //allows us to use absolute path. Using dist folder as a directory
+        path: path.resolve(__dirname, '../public'), //allows us to use absolute path. Public folder is now our new dist folder
         filename: 'bundle.js',
     },
     devServer: {
         static: {
-            directory: path.resolve(__dirname, 'dist') //serving from here
+            directory: path.resolve(__dirname, '../public') //serving from here
         },
         port: 3000,
         open: true,
